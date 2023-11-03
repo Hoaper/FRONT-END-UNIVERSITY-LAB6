@@ -37,6 +37,7 @@ function getDayCount(isCurrent) {
             break;
 
     }
-
-    outPut.innerHTML = `${selectedDate.toLocaleString('en', { month: 'long' })}, ${dayCount}`;
+    let output = `${selectedDate.toLocaleString('en', { month: 'long' })}, ${dayCount}`;
+    outPut.innerHTML = output;
+    return output;
   }
